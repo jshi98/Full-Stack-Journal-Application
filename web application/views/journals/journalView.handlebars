@@ -1,0 +1,33 @@
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="../../public/css/main.css">
+</head>
+
+<body>
+  <header>
+    <h2>{{journal.title}}</h2>
+    <p>Author: {{journal.author}}</p>
+
+    <a href="/sections/newSection?journalId={{journal._id}}" class="button-link">Create a Section</a>
+  </header>
+
+  <main>
+  <h3>Sections</h3>
+  {{#if journal.sections.length}}
+    <ul>
+      {{#each journal.sections}}
+        <li><a href="/sections/{{this._id}}">{{this.title}}</a></li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No sections yet. Create one!</p>
+  {{/if}}
+  </main>
+
+  <footer>
+    <a href="/journal.html" class="button-link">Back to Main Journal Page</a>
+    <a href="/users/get/{{journal.author}}" class="button-link">Back to User Page</a>
+    <br><br>
+    <a href="/journals/{{journal._id}}/delete" class="delete-button-link">Delete This Journal</a>
+  </footer>
+</body>

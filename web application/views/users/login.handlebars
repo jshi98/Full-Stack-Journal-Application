@@ -1,0 +1,31 @@
+<head>
+        <title>Login</title>
+        <link rel = "stylesheet" href="../../public/css/main.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <a href="/users/register" class="button-link">Click Here to Register</a>
+    </header>
+    <main class="login-main">
+        <div class="log-form">
+            <form id="login-form" method="POST" action="/users/login">
+                <label for="loginInput">Username:</label>
+                <input type="text" name="loginInput" id="loginInput">
+                <br>
+                <label for="passwordInput">Password:</label>
+                <input type="password" name="passwordInput" id="passwordInput">
+                <br>
+                <button type="submit" class="button-link">Login</button>
+                <ul hidden id="errors"></ul>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a class="button-link" href="/">Back to main page</a>
+        <p>2024: The Journal App by CS546 Group 5.</p>
+    </footer>
+    <script src="../../public/js/users.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>

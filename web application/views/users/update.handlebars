@@ -1,0 +1,41 @@
+<head>
+        <title>Update: {{username}}</title>
+        <link rel = "stylesheet" href="../../public/css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Update: {{username}}</h1>
+    </header>
+    <main class="update-main">
+        <form class="log-form" id="update-form" method="POST" action="/users/update/{{username}}">
+            <label for="passwordInput">New Password:</label>
+            <input type="password" name="passwordInput" id="passwordInput">
+            <br>
+            <label for="confirmPasswordInput">Confirm New Password:</label>
+            <input type="password" name="confirmPasswordInput" id="confirmPasswordInput">
+            <br>
+            <label for="ageInput">Original Age: {{age}}, Enter New Age:</label>
+            <input type="number" name="ageInput" id="ageInput">
+            <br>
+            <label for="emailInput">Original Email: {{email}}, Enter New Email:</label>
+            <input type="email" name="emailInput" id="emailInput">
+            <br>
+            <label for="firstNameInput">Original First Name: {{firstName}}, First Name:</label>
+            <input type="text" name="firstNameInput" id="firstNameInput">
+            <br>
+            <label for="lastNameInput">Original Last Name: {{lastName}}, Last Name:</label>
+            <input type="text" name="lastNameInput" id="lastNameInput">
+            <br>
+            <button type="submit" class="button-link">Update</button>
+            <ul hidden id="errors"></ul>
+        </form>
+    </main>
+    <footer>
+        <a class="button-link" href="/users/get/{{username}}">Back to user</a>
+        <p>2024: The Journal App by CS546 Group 5.</p>
+    </footer>
+    <script src="../../public/js/users.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>

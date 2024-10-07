@@ -1,0 +1,38 @@
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../../public/css/main.css">
+</head>
+<header>
+    <h1>Search Journal Entry</h1>
+</header>
+<main>
+    <form id="searchForm" method="POST" action="/posts/search">
+        <div class="search">
+            <label for="searchInput">Title:
+                <input id="searchInput" name="searchInput" placeholder="Enter Search">
+            </label>
+        </div>
+        <div class="text-label">
+            
+        </div>
+        <div class="button">
+            <button type="submit" id="searchButton" class="button-link">Save Entry</button>
+        </div>
+        <p id="error">{{error}}</p>
+        <p id="message">{{message}}</p>
+        <ol class="ol" id="search">
+            {{#each searchResults}}
+                
+                <li><a href="/posts/{{this._id}}">{{this.title}}: {{this.time}}</a></li>
+            {{/each}}
+        </ol>
+    </form>
+    <br>
+</main>
+<footer>
+    <a class="button-link" href="/">Back to main page</a>
+    {{#if username}}
+        <a class="button-link" href="/users/get/{{username}}">Return to User</a>
+    {{/if}}
+    <p>2024: The Journal App by CS546 Group 5.</p>
+</footer>

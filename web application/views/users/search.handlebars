@@ -1,0 +1,42 @@
+<head>
+        <title>{{username}}</title>
+        <link rel = "stylesheet" href="../../public/css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Search: {{username}}, Keyword: {{keyword}}</h1>
+    </header>
+    <main>
+        {{#if valid}}
+            {{#if publicPosts}}
+                <h2>Public Posts</h2>
+                {{#each posts.publicPosts}}
+                    <a href="/posts/{{_id}}">{{title}}: {{time}}</a>
+                    <br>
+                {{/each}}
+            {{/if}}
+            {{#if sharedPosts}}
+                <h2>Shared Posts</h2>
+                {{#each posts.sharedPosts}}
+                    <a href="/posts/{{_id}}">{{title}}: {{time}}</a>
+                    <br>
+                {{/each}} 
+            {{/if}}
+            {{#if privatePosts}}
+                <h2>Private Posts</h2>
+                {{#each posts.privatePosts}}
+                    <a href="/posts/{{_id}}">{{title}}: {{time}}</a>
+                    <br>
+                {{/each}}
+            {{/if}}
+        {{else}}
+            <p>{{posts}}</p>
+        {{/if}}
+    </main>
+    <footer>
+        <a class="button-link" href="/users/get/{{username}}">Back to user</a>
+        <p>2024: The Journal App by CS546 Group 5.</p>
+    </footer>
+    <script src="../../public/js/users.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>

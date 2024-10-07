@@ -1,0 +1,651 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* General Styles */
+header {
+  background-color: #1f1d1d8e;
+  color: #ffffff;
+  padding: 10px 10%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+body {
+  background-image: url('../images/background1.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.button-link {
+  background-color: #007bff;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin: 5px 0; 
+  border-radius: 5px; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-link:hover {
+  background-color: #eda13ed2; 
+}
+
+.delete-button-link {
+  background-color: #ff5454;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin: 5px 0; 
+  border-radius: 5px; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+.delete-button-link:hover {
+  background-color: #d92424d2; 
+}
+
+.logout-button-link {
+  background-color: #083ac2d2;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin: 5px 0; 
+  border-radius: 5px; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logout-button-link:hover {
+  background-color: #80afe0; 
+}
+
+.text-link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+body main.login-main {
+  background-color: transparent;
+}
+
+body main.user-main {
+  background-color: transparent;
+}
+
+body main.update-main {
+  background-color: transparent;
+}
+
+main {
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10%;
+  padding: 10px;
+  border-radius: 8px;
+  list-style-position: inside;
+}
+
+
+form {
+  margin-top: 15px; 
+}
+
+footer {
+  text-align: center;
+  padding: 10px 10%;
+  background-color: #1f1d1d8e;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+
+/* Landing Page Styles */
+
+.landing-page header {
+    background-color: #1f1d1d8e;
+    color: #ffffff;
+    padding: 10px 10%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.landing-page nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* .landing-page nav a {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+} */
+
+
+.landing-page section {
+    background-color: #ffffff;
+    margin: 20px 10%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.landing-page section h2 {
+    color: #343c44f1;
+}
+
+.landing-page footer {
+    background-color: #1f1d1d8e;
+    color: #ffffff;
+    padding: 10px 10%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Journal Page Styles */
+.journal-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .journal-page header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .journal-page h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .journal-page p {
+    margin: 10px 0 0;
+  }
+  
+  .journal-page nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .journal-page nav button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .journal-page nav button:hover {
+    background-color: #0056b3;
+  }
+  
+  .journal-page section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .journal-page section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .journal-page input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+  }
+  
+  .journal-page button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .journal-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  .journal-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .journal-page li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .journal-page footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+/* For delete post */
+
+.delete-container {
+  background-color: #f5deb3;
+  padding: 50px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh;
+}
+
+.delete-title {
+  margin-bottom: 125px;
+  text-align: center; 
+}
+
+.delete form {
+  text-align: center;
+}
+
+.delete label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.delete input[type="text"],
+.delete button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.delete a {
+  display: block;
+  margin-top: 20px;
+}
+
+/* For register and login */
+
+.user-title{
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register-title{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.log-form {
+    width: 300px; 
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.log-form h2 {
+    text-align: center;
+  }
+  
+  .log-form input[type="text"],
+  .log-form input[type="password"],
+  .log-form input[type="email"],
+  .log-form input[type="number"]
+  .log-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .log-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* .register-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  } */
+  
+  .register-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .register-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .register-form input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+  }
+  
+  .register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register-form button:hover {
+    background-color: #0056b3;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.register-links{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+
+.login-links{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.search-form {
+  width: 300px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.search-form h2 {
+  text-align: center;
+}
+
+.search-form input[type="text"],
+.search-form input[type="password"],
+.search-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.user-journals {
+  width: 300px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.user-public {
+  width: 300px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.user-journals h2 {
+  text-align: center;
+}
+
+.user-options {
+  width: 300px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-options p {
+  text-align: center;
+}
+
+.user-public {
+  width: 300px; 
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-public h2 {
+  text-align: center;
+}
+
+.user-shared {
+  width: 300px; 
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-shared h2 {
+  text-align: center;
+}
+
+
+.postPage {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+
+.postPage h1 {
+  text-align: center; 
+  margin-top: 0; 
+}
+
+.postPage p {
+  text-align: justify; 
+  margin-top: 0; 
+}
+
+.postPage * {
+  background-color: transparent; 
+}
+
+
+.title label,
+.text-label label,
+.public label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.title input[type="text"],
+.text-box textarea {
+    width: calc(100% - 50%px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.public select {
+    width: 25%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+
+
+/* Section Page Styles */
+/* .section-page {
+  text-align: center;
+}
+
+
+.section-page header {
+  background-color: #1f1d1d8e;
+  color: #ffffff;
+  padding: 10px 10%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.section-page h2 {
+  color: #fdfeff;
+  font-size: 24px; 
+}
+
+.section-page .button-link {
+  background-color: #007bff;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin: 5px 0; 
+  border-radius: 5px; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+.section-page .button-link:hover {
+  background-color: #eda13ed2; 
+}
+
+.section-page .text-link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.section-page .text-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.section-page section{
+  background-color: #ffffff;
+  margin: 20px 10%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.section-page form {
+  margin-top: 15px; 
+}
+
+.section-page ul {
+  list-style: none; 
+  padding-left: 0; 
+}
+
+.section-page li {
+  padding: 5px 0; 
+  font-size: 16px;
+}
+
+.section-page footer {
+  text-align: center;
+  padding: 10px 10%;
+  background-color: #1f1d1d8e;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-top: 20px;
+} */

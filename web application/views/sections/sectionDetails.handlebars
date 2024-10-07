@@ -1,0 +1,32 @@
+<head>
+    <title>{{section.title}}</title>
+    <link rel="stylesheet" href="../../public/css/main.css">
+</head>
+<body>
+    <header>
+    <h2>{{section.title}}</h2>
+
+    <a href="/posts/newPost/{{section._id}}" class="button-link" >Create a new post</a>
+    </header>
+    <main>
+        <h3>Posts</h3>
+        {{#if section.posts.length}}
+        <ul>
+            {{#each section.posts}}
+            <li><a href="/posts/{{this._id}}" class="text-link">{{this.title}}: {{this.time}}</a></li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>No posts yet.</p>
+        {{/if}}
+    </main>
+
+    <footer>
+        <a href="/journals/{{section.journalId}}" class="button-link">Back to Journal</a>
+        <a href="/sections/delete/{{section._id}}" class="delete-button-link">Delete This Section</a>
+        <p>2024: The Journal App by CS546 Group 5.</p>
+    </footer>
+
+
+    <script src="../../public/js/sections.js"></script>
+</body>

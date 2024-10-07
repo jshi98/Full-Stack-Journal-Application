@@ -1,0 +1,55 @@
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../../public/css/main.css">
+</head>
+<header>
+    <h1>Update Journal Entry</h1>
+</header>
+<main>
+        <form id="entryForm" method="POST" action="/posts/update/{{id}}">
+            <div class="title">
+                <label for="titleInput">Title:
+                    <input id="titleInput" name="titleInput" placeholder="Enter Title">
+                </label>
+            </div>
+            <br>
+            <div class="text-label">
+                    <label for="entryText">Journal Entry Text:</label>
+            </div>
+            <div class="text-box">
+                    <textarea id="entryText" name="entryText" rows="10" cols="50" placeholder="Enter Text Here"></textarea>
+            </div>
+            <div class="public">
+                <label for="pub">Public?:
+                    <select name="pub" id="pub">
+                        <option value="private">Private</option>
+                        <option value="public">Public</option>
+                    </select>
+                </label>
+            </div>
+            <label for="usernameInput">Username
+                <input id="usernameInput" name="usernameInput" placeholder="Enter Username to Share With">
+            </label>
+            <br>
+            <br>
+            <br>
+            <div class="post-reply">
+                {{#if success}}
+                    <p id="postId">Updated Successfully.</p>
+                {{/if}}
+            </div>
+            <br>
+            <div class="button">
+                <button id="saveButton">Save Entry</button>
+            </div>
+            {{#if hasError}}
+                <p id="error" class="error">{{error}}</p>
+            {{/if}}
+        </form>
+        <br>
+        <a class="button-link" href="/posts/{{id}}">Return to Post</a>
+</main>
+<footer>
+    <br>
+    <p>2024: The Journal App by CS546 Group 5.</p>
+</footer>
